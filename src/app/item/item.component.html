@@ -1,0 +1,2 @@
+<span *ngIf="!post.isInput" [class.strike]="post.status===1" (click)="togg()">{{post.title}}</span>
+        <input appFocus [(ngModel)]="post.title" *ngIf="post.isInput" type="text" (keyup.enter)="editt()" (focusout)="editt()">

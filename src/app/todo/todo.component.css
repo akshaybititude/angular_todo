@@ -1,0 +1,28 @@
+  h1{
+    font-size: 60px;
+    color: dimgray;
+}
+.close {
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  content: ' ';
+  height: 25px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.data:hover .close {
+    opacity: 1;
+}
